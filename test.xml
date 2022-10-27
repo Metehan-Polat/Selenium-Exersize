@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite" parallel="tests" thread-count="2"><!-- Biz iki(thread count) farklı (paralels)TEST i paralel şekilde koşmak için test olarak tanımlarız.İk ifarklı metot veya class değil komple test olarak düşünürsek -->
+
+    <test name="Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+        <class name="org.main.Main">
+        <methods>
+            <include name="getUrl"/>
+            <include name="productButton"/>
+            <include name="firstProductAddToCartC"/>
+            <include name="continueShop"/>
+            <include name="secondProductAddToCartC"/>
+            <include name="viewwCart"/>
+            <include name="bothProd"/>
+
+        </methods>
+        </class>
+
+
+        </classes>
+    </test>
+
+</suite>
